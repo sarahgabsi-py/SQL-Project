@@ -20,13 +20,13 @@ Based on the ER model, a full relational schema was developed, including:
 - foreign keys (FK)
 - referential integrity constraints
 Key tables include:
-- USER
-- STUDENT (FK to USER, FK to DEGREE_PROGRAM)
-- ADMINISTRATOR (FK to USER)
-- DEGREE_PROGRAM (FK to ADMINISTRATOR)
-- STUDY_PLAN (FK to DEGREE_PROGRAM)
-- CAREER_RECORD (FK to STUDENT, FK to STUDY_PLAN)
-- EVENT, ROOM, INTERVENTION, AUTHOR, ENTRY
+  - USER
+  - STUDENT (FK to USER, FK to DEGREE_PROGRAM)
+  - ADMINISTRATOR (FK to USER)
+  - DEGREE_PROGRAM (FK to ADMINISTRATOR)
+  - STUDY_PLAN (FK to DEGREE_PROGRAM)
+  - CAREER_RECORD (FK to STUDENT, FK to STUDY_PLAN)
+  - EVENT, ROOM, INTERVENTION, AUTHOR, ENTRY
 The schema ensures consistency, integrity, and traceability of all information.
 
 # 🧱 3. Entities and Attributes
